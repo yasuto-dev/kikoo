@@ -65,16 +65,16 @@
                                     <!-- tweet info bar start -->
                                     <div class="tweet-info-bar flex items-center">
                                         <a href="#" class="hover:underline text-gray-900 font-bold text-base mr-1">{{ post.author }}</a>
-                                        <span class="text-gray-600 text-base font-light tracking-wide">@BarristerSecret</span>
+                                        <span class="text-gray-600 text-base font-light tracking-wide">@NewUser  </span>
                                         <span class="inline-block ml-1">·</span>
-                                        <span class="text-gray-600 text-base font-light tracking-wide inline-block ml-1">3h</span>
+                                        <span class="text-gray-600 text-base font-light tracking-wide inline-block ml-1">{{ post.date_posted }}</span>
                                     </div>
                                     <!-- tweet info bar end -->
                                     <!-- tweet detail start -->
                                     <div class="tweet-detail">
                                         <p>
-                                            {{ post.contenet }}
-                                            <a class="font-semibold" href="##MondayMotivation">#MondayMotivation</a>
+                                            {{ post.content }}
+
                                         </p>
                                     </div>
                                     <!-- tweet detail end -->
@@ -96,7 +96,7 @@
                                                         </svg>
                                                     </span>
                                                     <span class="px-1 inline-block ficon-text font-normal">
-                                                        3
+                                                        0
                                                     </span>
                                                 </div>
                                             </div>
@@ -114,14 +114,16 @@
                                                         </svg>
                                                     </span>
                                                     <span class="px-1 inline-block ficon-text font-normal">
-                                                        32
+                                                    {{ post.retweet }}
+
                                                     </span>
                                                 </div>
                                             </div>
-
+                                            
                                             <div class="inline-block w-full">
                                                 <div class="inline-flex ficon-wrapper like text-gray-600">
                                                     <span class="ficon like rounded-full">
+                                                    
                                                         <svg
                                                             viewbox="0 0 24 24"
                                                             class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi">
@@ -132,7 +134,7 @@
                                                         </svg>
                                                     </span>
                                                     <span class="px-1 inline-block ficon-text font-normal">
-                                                        123
+                                                    {{ post.likes }}
                                                     </span>
                                                 </div>
                                             </div>
